@@ -1,0 +1,83 @@
+[CEnclavePool /home/dblab/Documents/linux-sgx-master/psw/urts/enclave.cpp:301] enter CEnclavePool constructor
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Performing specific benchmark (hash)...
+Starting Enclave Hash (sha256) Benchmark for 128 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+128	3.769121
+Starting Enclave Mac (AES cmac) Benchmark for 128 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+128	6.495730
+Starting Enclave Hash (sha256) Benchmark for 256 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+256	4.372620
+Starting Enclave Mac (AES cmac) Benchmark for 256 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+256	9.320532
+Starting Enclave Hash (sha256) Benchmark for 384 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+384	5.021482
+Starting Enclave Mac (AES cmac) Benchmark for 384 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+384	12.183101
+Starting Enclave Hash (sha256) Benchmark for 512 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+512	5.598285
+Starting Enclave Mac (AES cmac) Benchmark for 512 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+512	15.018457
+Starting Enclave Hash (sha256) Benchmark for 640 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+640	6.201489
+Starting Enclave Mac (AES cmac) Benchmark for 640 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+640	17.617554
+Starting Enclave Hash (sha256) Benchmark for 768 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+768	6.710314
+Starting Enclave Mac (AES cmac) Benchmark for 768 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+768	20.028977
+Starting Enclave Hash (sha256) Benchmark for 896 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+896	7.257771
+Starting Enclave Mac (AES cmac) Benchmark for 896 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+896	24.322343
+Starting Enclave Hash (sha256) Benchmark for 1024 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1024	7.987776
+Starting Enclave Mac (AES cmac) Benchmark for 1024 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1024	25.880799
+Starting Enclave Hash (sha256) Benchmark for 1152 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1152	8.372266
+Starting Enclave Mac (AES cmac) Benchmark for 1152 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1152	28.917900
+Starting Enclave Hash (sha256) Benchmark for 1280 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1280	8.991675
+Starting Enclave Mac (AES cmac) Benchmark for 1280 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7fe2c3000000, size = 800000
+Amount	Time (microseconds)
+1280	31.446164

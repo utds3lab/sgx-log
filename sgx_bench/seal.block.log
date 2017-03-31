@@ -1,0 +1,83 @@
+[CEnclavePool /home/dblab/Documents/linux-sgx-master/psw/urts/enclave.cpp:301] enter CEnclavePool constructor
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Performing specific benchmark (seal)...
+Starting Enclave Seal Benchmark for 1024 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+1024	61.001437
+Starting Enclave Seal Benchmark for 2048 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+2048	102.348365
+Starting Enclave Seal Benchmark for 3072 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+3072	141.589038
+Starting Enclave Seal Benchmark for 4096 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+4096	184.047019
+Starting Enclave Seal Benchmark for 5120 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+5120	226.714715
+Starting Enclave Seal Benchmark for 6144 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+6144	265.279283
+Starting Enclave Seal Benchmark for 7168 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+7168	302.501620
+Starting Enclave Seal Benchmark for 8192 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+8192	346.327546
+Starting Enclave Seal Benchmark for 9216 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+9216	389.654360
+Starting Enclave Seal Benchmark for 10240 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+10240	427.045122
+Starting Enclave Unseal Benchmark for 1024 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+1024	52.233519
+Starting Enclave Unseal Benchmark for 2048 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+2048	93.984669
+Starting Enclave Unseal Benchmark for 3072 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+3072	134.600902
+Starting Enclave Unseal Benchmark for 4096 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+4096	175.280830
+Starting Enclave Unseal Benchmark for 5120 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+5120	214.919254
+Starting Enclave Unseal Benchmark for 6144 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+6144	255.883578
+Starting Enclave Unseal Benchmark for 7168 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+7168	294.653139
+Starting Enclave Unseal Benchmark for 8192 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+8192	337.536218
+Starting Enclave Unseal Benchmark for 9216 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+9216	379.626424
+Starting Enclave Unseal Benchmark for 10240 bytes...
+[build_secs /home/dblab/Documents/linux-sgx-master/psw/urts/loader.cpp:346] enclave start address = 0x7f7fdc800000, size = 800000
+Amount	Time (microseconds)
+10240	417.833371

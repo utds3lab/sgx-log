@@ -1,0 +1,44 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    
+    include "user_types.h" /* buffer_t */
+
+    include "sgx_tseal.h"
+
+    trusted {
+        public void test_function([in,string] const char *str);
+        public int add(int x, int y);
+        public void nothing();
+        public void init_secret_data(size_t amount);
+        public void test_seal_data();
+        public void test_unseal_data([user_check]uint8_t* sealed);
+	public void test_report([out]sgx_report_t* report);
+	public void test_copy_in([in,size=1,count=len] uint8_t* buf, size_t len, size_t offset);
+	public void test_copy_out([out,size=1,count=len] uint8_t* buf, size_t len, size_t offset);
+	public void test_create_key_pair();
+	public void test_shared_dhkey();
+	public void test_encrypt(size_t length);
+	public void test_decrypt(size_t length);
+	public void test_hash(size_t length);
+	public void test_mac(size_t length);
+    };
+
+    /* Import ECALL/OCALL from sub-directory EDLs.
+     *  [from]: specifies the location of EDL file. 
+     *  [import]: specifies the functions to import, 
+     *  [*]: implies to import all functions.
+     */
+    
+
+    /* 
+     * ocall_print_string - invokes OCALL to display string buffer inside the enclave.
+     *  [in]: copy the string buffer to App outside.
+     *  [string]: specifies 'str' is a NULL terminated buffer.
+     */
+    untrusted {
+        void ocall_print_string([in, string] const char *str);
+	void ocall_seal_data([in,size=1,count=len] uint8_t* sealed, size_t len);
+    };
+
+};
