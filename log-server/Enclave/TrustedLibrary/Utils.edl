@@ -1,0 +1,9 @@
+enclave {
+    
+    trusted {
+        public int compareHashValues([in]char * old_hash, [in]char * new_hash, int len);
+    	public void reverse([in,count=length]char * str, int length);
+    	public char* itoa(int num, [in]char* str, int base);
+        public int myAtoi([in]char *str);
+    };
+};

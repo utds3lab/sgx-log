@@ -1,0 +1,8 @@
+enclave {
+    
+    trusted {
+        public char* get_hash([in,count=len] char* str, int len);
+        public char* seal_data([in, count=log_buffer_length] uint8_t * log_buffer, uint32_t log_buffer_length);
+        
+    };
+};

@@ -1,0 +1,8 @@
+enclave {
+    trusted {
+        public char* get_next_block_key([in]char *str, int len,int B_ID);
+        public char* get_next_message_key([in] char *str, int len, int M_ID);
+        public char* get_mac([in]char * str, int len, [in]char * key);
+        public char* hash([in] char* str, int len);
+    };
+};

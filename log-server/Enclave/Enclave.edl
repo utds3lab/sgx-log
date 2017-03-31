@@ -1,0 +1,56 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    
+    include "user_types.h" /* buffer_t */
+    include "sgx_tcrypto.h"
+
+    /* Import ECALL/OCALL from sub-directory EDLs.
+     *  [from]: specifies the location of EDL file. 
+     *  [import]: specifies the functions to import, 
+     *  [*]: implies to import all functions.
+     */
+    
+    from "Edger8rSyntax/Types.edl" import *;
+    from "Edger8rSyntax/Pointers.edl" import *;
+    from "Edger8rSyntax/Arrays.edl" import *;
+    from "Edger8rSyntax/Functions.edl" import *;
+
+    from "TrustedLibrary/Libc.edl" import *;
+    from "TrustedLibrary/Libcxx.edl" import ecall_exception, ecall_map;
+    from "TrustedLibrary/Thread.edl" import *;
+    from "TrustedLibrary/HashChain.edl" import *;
+    from "TrustedLibrary/Utils.edl" import *;
+    from "TrustedLibrary/SGXFunctions.edl" import *;
+    from "TrustedLibrary/Logger.edl" import *;
+	
+	trusted {
+        public void process_log([in,string] char *str);
+        public uint32_t verify_block_messages();
+        public void generate_config([in,string] const char *str, int len);
+        public void startup_phase();
+        public void reset_block_key();
+        
+ 
+    };
+    /* 
+     * ocall_print_string - invokes OCALL to display string buffer inside the enclave.
+     *  [in]: copy the string buffer to App outside.
+     *  [string]: specifies 'str' is a NULL terminated buffer.
+     */
+    untrusted {
+        void ocall_print_string([in, string] const char *str);
+        void ocall_read_config_data([in, string] const char * str) allow(generate_config);
+        void ocall_read_log_messages([in, string] const char *str);
+        void ocall_listen_log_messages();
+        /* Write sealed region key to disk.  This is called only during pw_region_enroll. */
+    	uint32_t ocall_write_region_data([in, size=bloblen]  uint8_t *blob, uint32_t bloblen);
+    	
+    	/* Read sealed region key from disk.  This is called as needed, and the result is cached. */
+    	uint32_t ocall_read_region_data([out, size=bloblen_in] uint8_t *blob, uint32_t bloblen_in, [out] uint32_t *bloblen_out);
+    	
+    	uint32_t ocall_write_sealed_data([in, size=bloblen]  uint8_t *blob, uint32_t bloblen, [in, string] const char * str);
+    	uint32_t ocall_read_sealed_data( [in, string]  char * str) allow(verify_block_messages);    	
+    };
+
+};

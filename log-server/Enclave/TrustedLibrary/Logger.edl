@@ -1,0 +1,6 @@
+enclave {
+    
+    trusted {
+        public void seal_and_write([in] char* str, [in]char* filename);
+    };
+};
