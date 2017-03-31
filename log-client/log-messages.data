@@ -1,0 +1,9 @@
+May  1 08:39:02 vishal-Precision-WorkStation-T3400 kernel: [1103555.646657] INFO: NMI handler (perf_event_nmi_handler) took too long to run: 1.295 msecs
+May  2 07:39:58 vishal-Precision-WorkStation-T3400 kernel: [1186411.183227] audit: type=1400 audit(1462192798.351:110): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=13241 comm="apparmor_parser"
+May  2 07:39:58 vishal-Precision-WorkStation-T3400 kernel: [1186411.183239] audit: type=1400 audit(1462192798.351:111): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=13241 comm="apparmor_parser"
+May  2 07:39:58 vishal-Precision-WorkStation-T3400 kernel: [1186411.183663] audit: type=1400 audit(1462192798.351:112): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=13241 comm="apparmor_parser"
+May  3 07:44:55 vishal-Precision-WorkStation-T3400 kernel: [1273108.097453] audit: type=1400 audit(1462279495.265:113): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=15906 comm="apparmor_parser"
+May  3 07:44:55 vishal-Precision-WorkStation-T3400 kernel: [1273108.097464] audit: type=1400 audit(1462279495.265:114): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=15906 comm="apparmor_parser"
+May  3 07:44:55 vishal-Precision-WorkStation-T3400 kernel: [1273108.097889] audit: type=1400 audit(1462279495.265:115): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/sbin/cupsd" pid=15906 comm="apparmor_parser"
+May  3 12:16:09 vishal-Precision-WorkStation-T3400 kernel: [1289382.151614] nouveau  [   PLTCG][0000:01:00.0] LTC0_LTS1: BLOCKLINEAR_CB
+May  3 12:16:09 vishal-Precision-WorkStation-T3400 kernel: [1289382.151648] nouveau  [   PLTCG][0000:01:00.0] LTC0_LTS0: BLOCKLINEAR_CB
