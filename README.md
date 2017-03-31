@@ -90,7 +90,7 @@ make clean
 make
 ./app
 ```
-
+Use ctr+C to quit log server when finished. 
 
 ### 2) log-client
 Log-client is a program that reads messages from text file and sends to log-server using over using socket communication.
@@ -105,9 +105,21 @@ gcc log-client.c -o client
 
 ### 3) sgx-bench
 sgx-bench consists of fine-grained benchmark programs used to test SGX specific services. E.g, sealing, unsealing, hashing etc.
+Run sgx-bench using following commands.
 
+```bash
+cd sgx-bench
+make clean
+make
+./app -b copy       // tests copy benchmkark
+./app -b seal 0     // tests sgx sealing
+./app -b seal 1     // tests sgx unsealing
+./app -b hash 0     // tests sgx hashing
+./app -b hash 1     // tests sgx CMAC 
+```
+We also contribute by adding other benchmarks to test enclave create, destroy, encrypt, decrypt, entry-exit operations.
 
-### 4) Dataset
+### 4) dataset
 We also provide sample log files used in our SGX-Log evaluation under datasets folder.
 
 
@@ -125,5 +137,4 @@ startup_phase(global_eid);
 printf("\n\n READING SEALED MESSAGES:\n");
 ocall_read_sealed_data("sealed-logs/kern.log");
  ```
-
 
